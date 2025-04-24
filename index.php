@@ -15,7 +15,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Produtos</a></li>
                     <li><a href="./carrinho.php">Carrinho</a></li>
-                    <li><a href="./cadastro.php">Cadastre-se</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
                     <li><a href="./login.php">Institucional</a></li>
                 </ul>
             </nav>

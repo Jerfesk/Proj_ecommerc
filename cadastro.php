@@ -8,7 +8,7 @@ if (isset($_POST["cadastrar"])) {    // condicional if, POST = array, cadastrar 
     $senha = $_POST["senha"];
     //$senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);  // Criptografa a senha(passoword_hash), o resultado hash é armazenado na $senha
 
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";  // cria-se aqui um comando SQL, atribui-se valores a variaveis
+    $sql = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome', '$email', '$senha')";  // cria-se aqui um comando SQL, atribui-se valores a variaveis
 
     if ($conn->query($sql) === TRUE) {  //  executa o SQL construído, $conn é variavel que consta em conexao.php
         echo "Cadastro realizado com sucesso!";  // se a execução for bem sucedida retorna esta mesg
