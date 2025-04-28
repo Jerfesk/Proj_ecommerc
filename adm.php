@@ -13,8 +13,6 @@
     <ul>
         <li><a href="add_usuario.php">Adicionar</a></li>
         <li><a href="list_usuario.php">Listar</a></li>
-        <li><a href="alt_usuario.php">Alterar</a></li>
-        <li><a href="del_usuario.php">Deletar</a></li>
     </ul>
 
 

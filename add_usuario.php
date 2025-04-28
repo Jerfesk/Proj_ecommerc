@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $sql = "INSERT INTO usuario (nome, email, senha) VALUES (?, ?, ?)";  //insere um novo usuário
 
-    $stmt = $conn->prepare($sql);      // declaração SQL
+    $stmt = $conn->prepare($sql);      // declaração SQL, query é a "consulta" ao BD, seu resultado é guardado em $stmt
 
-    $stmt->bind_param("sss", $nome, $email, $senha_criptografada);  // Vincular os parâmetros
+    $stmt->bind_param("sss", $nome, $email, $senha_criptografada);  // Vincular os parâmetros, o sss imdica todos são strings
 
-    if ($stmt->execute()) {                           // Executar a query
+    if ($stmt->execute()) {                           // Executar a query, verifica se cadastrado
         $mensagem = "Usuário cadastrado com sucesso!";
     } else {
         $mensagem = "Erro ao cadastrar usuário: " . $stmt->error;
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html>        <!-- tipo HTML5  -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -66,3 +66,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </body>
 </html>
+
+
+<!--
+Inicia uma sessão.
+Verifica se a página foi acessada através de um envio de formulário (método POST).
+Se sim, inclui o arquivo de conexão com o banco de dados.
+Recupera os dados do nome, email e senha enviados pelo formulário.
+Criptografa a senha usando a função password_hash().
+Prepara uma query SQL para inserir um novo usuário no banco de dados.
+Vincula os valores do nome, email e senha criptografada à query preparada.
+Executa a query e verifica se a inserção foi bem-sucedida.
+Define uma mensagem de sucesso ou erro, dependendo do resultado da inserção.
+Fecha a declaração SQL e a conexão com o banco de dados.
+Exibe um formulário HTML para adicionar um novo usuário.
+Se uma mensagem (de sucesso ou erro) estiver definida, ela é exibida acima do formulário.
+  -->

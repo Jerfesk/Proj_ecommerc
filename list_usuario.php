@@ -20,16 +20,16 @@ $result = $conn->query($sql);
     <?php
     if ($result->num_rows > 0) {
         echo "<table border='1'>";
-        echo "<thead><tr><th>ID</th><th>Nome</th><th>Email</th><th>Ações</th></tr></thead>";
+        echo "<thead><tr><th>Nome</th><th>Email</th><th>Ações</th></tr></thead>";  //<th>ID</th> retirado p/ adequar a saida do ID
         echo "<tbody>";
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . $row["id_usuario"] . "</td>";
+            //echo "<td>" . $row["id_usuario"] . "</td>";  // tive que comentar, pois o ID está AUTO_INCREMENT
             echo "<td>" . $row["nome"] . "</td>";
             echo "<td>" . $row["email"] . "</td>";
             echo "<td>";
-            echo "<a href='alt_usuario.php?id=" . $row["id_usuario"] . "'>Alterar</a> | ";
-            echo "<a href='del_usuario.php?id=" . $row["id_usuario"] . "'>Deletar</a>";
+            echo "<a href='alt_usuario.php?id=" . $row["email"] . "'>Alterar</a> | ";
+            echo "<a href='del_usuario.php?id=" . $row["email"] . "'>Deletar</a>";
             echo "</td>";
             echo "</tr>";
         }
