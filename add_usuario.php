@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $senha_criptografada = password_hash($senha, PASSWORD_DEFAULT);// Cripto a senha antes de salvar no banco de dados
     
-    $sql = "INSERT INTO usuario (nome, email, senha) VALUES (?, ?, ?)";  //insere um novo usuário
+    $sql = "INSERT INTO usuario (nome, email, senha,dt_inc) VALUES (?, ?, ?,now())";  //insere um novo usuário, obs:este now() é o comando agora, coloca data e hora.
 
     $stmt = $conn->prepare($sql);      // declaração SQL, query é a "consulta" ao BD, seu resultado é guardado em $stmt
 

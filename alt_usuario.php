@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $atualizacao_bem_sucedida = true;  // verificação booleana para certificar que as atualizações foram bem sucedidas.
 
     // Query SQL para atualizar nome e email
-    $sql_atualizar_dados = "UPDATE usuario SET nome = ?, email = ? WHERE email = ?";
+    $sql_atualizar_dados = "UPDATE usuario SET nome = ?, email = ?, dt_alt = now() WHERE email = ?";
     $stmt_dados = $conn->prepare($sql_atualizar_dados);
     $stmt_dados->bind_param("sss", $novo_nome, $novo_email, $id_original);
 
