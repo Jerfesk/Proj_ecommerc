@@ -48,7 +48,7 @@ if (isset($conn) && $conn instanceof mysqli) { // Verifica se $conn existe e é 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Painel de Administração</title>
     <style>
-        /* Estilos gerais (COPIADOS DA adm.php e add_usuario.php) */
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;

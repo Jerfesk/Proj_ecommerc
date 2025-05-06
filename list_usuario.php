@@ -21,7 +21,7 @@ if ($result === false) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Usuários - Administração</title>
     <style>
-        /* === Estilos Base (Importados do padrão adm.php formal) === */
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -53,7 +53,7 @@ if ($result === false) {
             font-size: 1.8em;
             font-weight: 600;
         }
-        /* Estilo para mensagens flash (copiado do adm.php) */
+        
         .message { margin: 15px 0; padding: 15px; border: 1px solid transparent; border-radius: 4px; font-size: 1em; text-align: center;}
         .message.success { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
         .message.error { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }

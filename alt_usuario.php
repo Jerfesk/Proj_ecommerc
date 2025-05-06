@@ -160,7 +160,7 @@ if ($conn && $conn->ping()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Usuário - Administração</title>
     <style>
-        /* === Estilos Base (Iguais ao adm.php/list_usuario.php formal) === */
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;

@@ -1,5 +1,5 @@
 <?php
-// SEU CÓDIGO PHP ORIGINAL - INTACTO
+
 session_start();  //inicia a sessão
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn->close();  // Fechar a conexão
 }
-// FIM DO SEU CÓDIGO PHP ORIGINAL
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Usuário - Painel de Administração</title> <style>
-        /* Estilos gerais (COPIADOS DA adm.php) */
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -50,10 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             min-height: 100vh;
         }
 
-        /* Container principal (COPIADO DA adm.php) */
+    
         .container {
             width: 90%;
-            max-width: 700px; /* Mesma largura máxima da adm.php */
+            max-width: 700px; 
             margin-top: 40px;
             margin-bottom: 40px;
             background-color: #ffffff;
@@ -63,8 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        /* Título principal (COPIADO DA adm.php) */
-        /* O h1 do seu HTML original será estilizado por esta regra */
+        
         h1 {
             color: #343a40;
             text-align: center;
@@ -76,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-weight: 600;
         }
 
-        /* --- INÍCIO: NOVOS ESTILOS PARA O FORMULÁRIO (baseados na estética da adm.php) --- */
+        
         .form-group {
             margin-bottom: 20px; /* Espaçamento entre os campos do formulário */
         }
