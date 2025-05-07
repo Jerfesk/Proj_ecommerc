@@ -134,10 +134,9 @@
 
         <section class="management-section">
             <h2>Produtos</h2> <ul class="action-list">
-                <li><a href="add_produto.php">Adicionar</a></li>
-                <li><a href="list_produto.php">Listar</a></li>
-                <li><a href="alt_produto.php">Alterar</a></li>
-                <li><a href="del_produto.php">Deletar</a></li>
+                <li><a href="produto_cadastrar.php">Adicionar</a></li>
+                <li><a href="produto_listar.php">Listar</a></li>
+                
             </ul>
         </section>
 
