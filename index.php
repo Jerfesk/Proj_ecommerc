@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="./pro_list.php">Produtos</a></li>
                     <li><a href="#">Carrinho</a></li>
                     <li><a href="#">Cadastre-se</a></li>
                     <li><a href="./login.php">Institucional</a></li>
