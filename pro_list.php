@@ -2,10 +2,9 @@
 // Cópia de produto_listar.php,
 // mas removendo funcionalidades (alterar/deletar).
 
-// Se sua página de e-commerce já inicia a sessão, esta linha pode ser opcional.
-if (session_status() == PHP_SESSION_NONE) {
+// Se sua página de e-commerce já inicia a sessão.
     session_start();
-}
+
 include 'conexao.php'; // Sua conexão com o banco
 
 // Buscar produtos do banco de dados
@@ -20,7 +19,6 @@ if ($result && $result->num_rows > 0) {
 } else if (!$result) {
     // Para depuração, se a consulta falhar.
     $mensagem_erro_busca = "Erro ao buscar produtos: " . $conn->error;
-    // Em um ambiente de produção, você pode querer logar este erro em vez de exibi-lo.
     // error_log("Erro ao buscar produtos em pro_list.php: " . $conn->error);
 }
 
@@ -36,7 +34,7 @@ if (!defined('CAMINHO_BASE_IMAGENS')) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Produtos</title> <?php // Título alterado para o contexto da loja ?>
+    <title>Nossos Produtos</title> 
     <style>
         
         body {
