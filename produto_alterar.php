@@ -161,8 +161,7 @@ if (!$produto && $_SERVER["REQUEST_METHOD"] !== "GET") { // Se não for GET e $p
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar Produto - Painel de Administração</title>
     <style>
-        /* COPIE AQUI O MESMO CSS USADO NAS OUTRAS PÁGINAS (adm.php, produto_cadastrar.php, etc.) */
-        /* ... (body, .container, h1, .form-group, input, textarea, .btn-submit, .form-message, .nav-links) ... */
+    
         body {
             font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0;
             background-color: #f8f9fa; color: #212529; display: flex;
