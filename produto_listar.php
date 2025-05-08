@@ -38,8 +38,7 @@ define('CAMINHO_BASE_IMAGENS', 'uploads/produtos/');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Produtos - Painel de Administração</title>
     <style>
-        /* COPIE AQUI O MESMO CSS USADO NA adm.php, produto_cadastrar.php, etc. */
-        /* ... (incluindo body, .container, h1, .form-group, input, .btn-submit, .form-message, .nav-links) ... */
+        
         body {
             font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0;
             background-color: #f8f9fa; color: #212529; display: flex;
